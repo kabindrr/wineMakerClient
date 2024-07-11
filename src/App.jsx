@@ -1,15 +1,18 @@
 import "./App.css";
-import { Button } from "react-bootstrap";
+import { Route, Routes } from "react-router-dom";
+
+import { LandingPage } from "./components/LandingPage";
+import { Register } from "./components/Register";
+import { Login } from "./components/Login";
 
 const App = () => {
   return (
     <>
-      helloooooo
-      <div className="d-flex justify-content-center align-items-center gap-2">
-        <Button className="btn btn-danger">Submit me</Button>
-        <Button className="btn btn-warning">Submit me</Button>
-        <Button>Submit me</Button>
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   );
 };

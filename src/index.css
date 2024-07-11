@@ -1,0 +1,63 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.login-form {
+  color: #eee2e5;
+  background-color: #c7d6d61e;
+  padding: 100px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  max-width: 500px;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .btn-primary {
+  margin-top: 20px;
+  width: 100%;
+}
+.custom-form {
+  color: rgba(37, 6, 6, 0.856);
+  max-width: 400px;
+  padding: 100px;
+  background-color: #98a1ac7a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-control:hover {
+  background-color: rgba(221, 202, 202, 0.959);
+}
+.form-control {
+  border-radius: 8px;
+}
+
+.btn-custom {
+  background-color: #2c050f;
+  border-color: #007bff;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+.btn-custom:hover {
+  background-color: #8f0909b0;
+  border-color: #0056b3;
+}
+.loginHead {
+  color: red;
+}
