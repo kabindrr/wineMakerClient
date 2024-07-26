@@ -18,3 +18,21 @@ export const signInUser = (obj) => {
   };
   return apiProcessor(axiosObj);
 };
+export const fetchUser = () => {
+  const axiosObj = {
+    url: userEP + "/user-profile",
+    method: "GET",
+    isPrivate: true,
+  };
+  return apiProcessor(axiosObj);
+};
+
+//email-verify axios
+export const emailVerifyAxios = (obj) => {
+  const axiosObj = {
+    url: userEP + "/verify-email",
+    method: "post",
+    data: obj,
+  };
+  return apiProcessor(axiosObj);
+};

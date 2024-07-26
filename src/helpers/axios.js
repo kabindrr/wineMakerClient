@@ -1,13 +1,29 @@
 import axios from "axios";
 
+export const getAccessJWT = () => {
+  return sessionStorage.getItem("accessJWT");
+};
+
+export const getRefreshJWT = () => {
+  return localStorage.getItem("refreshJWT");
+};
+
 export const apiProcessor = async (axiosObj) => {
-  console.log(axiosObj);
   try {
-    const { url, method, data } = axiosObj;
+    const { url, method, data, isPrivate, isRefresh } = axiosObj;
+    const headers = {
+      Authorization: isPrivate
+        ? isRefresh
+          ? getRefreshJWT()
+          : getAccessJWT()
+        : null,
+    };
+
     const result = await axios({
       url,
       method,
       data,
+      headers,
     });
     return result.data;
   } catch (error) {

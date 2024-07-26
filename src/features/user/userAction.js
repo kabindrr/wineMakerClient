@@ -1,4 +1,8 @@
-import { signInUser, signUpUser } from "./userAxios";
+import { fetchUser, signInUser, signUpUser } from "./userAxios";
+
+export const fetchUserAction = () => async (dispatch) => {
+  const { status, message } = await fetchUser();
+};
 
 export const loginUserAction = (obj) => async (dispatch) => {
   console.log(obj);
