@@ -10,3 +10,43 @@
   height: 90vh;
   object-fit: cover;
 }
+
+/* Navbar.css */
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: self-end;
+}
+
+.NavBarHeader {
+  display: flex;
+  background-color: #3a0505b7;
+  color: wheat;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+/* Footer.css */
+.footer {
+  padding: 20px 0;
+  background-color: #3a0505;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
