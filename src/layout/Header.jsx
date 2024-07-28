@@ -41,6 +41,10 @@ export const WineNavbar = () => {
                 <GiArchiveRegister />
                 Register
               </Link>
+              <Link className="nav-link" to="/Register">
+                <GiArchiveRegister />
+                Contact Us
+              </Link>
             </div>
           </Nav>
         </Navbar.Collapse>
