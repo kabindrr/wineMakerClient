@@ -1,14 +1,24 @@
+body {
+  margin: 0;
+  color: white;
+}
+.custom-navlink {
+  text-decoration: none;
+  color: white;
+}
+
 .main {
   min-height: 100vh;
 }
 .carousel {
-  height: 90vh;
+  height: 50vh;
 }
 
 .carousel img {
-  padding: 20px;
-  height: 90vh;
+  padding: 10px;
+  height: 46vh;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 /* Navbar.css */
@@ -24,10 +34,14 @@
 
 .NavBarHeader {
   display: flex;
-  background-color: #3a0505b7;
-  color: wheat;
-  font-size: x-large;
+  background-color: #6f0d0d;
+
+  font-size: large;
   font-weight: 600;
+}
+
+.NavBarHeader Nav.Link {
+  color: white;
 }
 
 /* Footer.css */
@@ -49,4 +63,35 @@
 
 .social-icons a:hover {
   color: #ddd;
+}
+
+/* src/HeroSection.css */
+.hero-section {
+  height: 90vh;
+}
+.hero-section {
+  height: 60vh;
+  background: url("./assets/showWine.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 2rem;
+}
+
+.hero-section .btn-primary {
+  background-color: #b89d7f;
+  border: none;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #a67c52;
 }
